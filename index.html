@@ -14,57 +14,135 @@
         }
 
         header{
-            background-color: rgb(255, 204, 255);
-            background-image: url(./img/back3.jpg);
+            background-color: rgba(255, 204, 255, 0.291);
+            background-image: url(./img/capa2.png);
             background-position: center;
             background-size: cover;
-            color: #eeeeee;
+            color: #040000;
             padding: 30px;
             text-align: center;
+            font-family: 'Courier New', Courier, monospace;
         }   
         header h1{
-            color: rgb(246, 179, 227);
+            color: rgb(3, 0, 0);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         
+        /* header div {
+            display: inline-block;
+            width: 40%;
+        } */
+
+       header div img {
+        width: 100px;
+       }
+       
+       .principal{
+        background-color: #f6f4f1;
+        height: 40px;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+        
+       .principal a{
+        color: rgb(0, 0, 0);
+        font-weight: normal;
+       }
+       
+       .principal li{
+        display: inline-block;
+        line-height: 2.5;
+        margin: 0 89px;
+       }
+
+       .pro{
+        background-color: #000000; 
+        color: #f6f4f1;
+        text-align: center;
+       }
+       .pro1{
+        background-color: #96695e;
+        text-align: center;
+       }
+
+       .emp{
+        background-color: #000000; 
+        color: #f6f4f1;
+        text-align: center;
+       }
+       .emp1{
+        background-color: #96695e ;
+        
+       }
+
+       .tec{
+        background-color: #000000; 
+        color: #f6f4f1;
+        text-align: center;
+       }
+       .tec1{
+        background-color: #96695e ;
+        text-align: center;
+
+       }
+
+    
 
     </style>
 </head>
 <body>
     <header>
-        <h1>Aline Azedias</h1>
-        <p>Programador WEB</p>
-        <p>Rio de Janeiro, Brasil</p>
-        <p>(21) 96640-0658</p>
-        <p>aline.azedias@gmail.com</p>
-        <img src="./img/linkedin.png" alt="logo linkedin" height="30"> 
-        <img src="./img/logogit.png" alt="logo github" height="30">
-        <img src="./img/belogo.png" alt="logo behance" height="30">
-        <img src="./img/face.png" alt="logo face" height="30"> 
-        <img src="./img/insta.png" alt="logo insta" height="30"> 
-        <img src="./img/twitter.png" alt="logo twitter" height="30"> 
+        <div>
+            <img src="https://avatars.githubusercontent.com/u/98472343?v=4" alt="foto do usuario">
+        </div>         
 
+        <div>
+            <h1>Aline Azedias</h1>
+            <p>Programador WEB</p>
+            <p>Rio de Janeiro, Brasil</p>
+            <p>(21) 96640-0658</p>
+            <p>aline.azedias@gmail.com</p>
+        </div>
+        <div></div>
+            <img src="./img/linkedin.png" alt="logo linkedin" height="30"> 
+            <img src="./img/logogit.png" alt="logo github" height="30">
+            <img src="./img/belogo.png" alt="logo behance" height="30">            
+            <img src="./img/insta.png" alt="logo insta"height="30"> 
+                   
        
     </header>
-    <nav>
-        <p>Início</p>
-        <p>Projetos</p>
-        <p>Empresas</p>
-        
+    <nav class="principal">
+        <ul>
+            <li>
+                <a href="#projetos"> Projetos</a>
+                <a href="#empresa"> Empresa</a>
+                <a href="#tecnologia">Tecnologias</a>
+            </li>
+        </ul>
+       
     </nav>
-    <section>
-        <h1> Projetos </h1>
+    <section id="projetos" class="pro1">
+        <h1 class="pro"> Projetos </h1>
+        <p>Projeto 1</p>
+        <img src="./img/fotonote.jpg" alt="foto de um notebook" height="200px">
+    
+
     </section>
 
-    <section>
-        <h1> Empresa </h1>
+    <section id="empresa" class="emp1">
+        <h1 class="emp"> Empresa </h1>
+        <p>Empresa 1</p>
     </section>
 
-    <section>
-        <h1>Tecnologias</h1>
+    <section id="tecnologia" class="tec1">
+        <h1 class="tec">Tecnologias</h1>
+        <img src="./img/tecfotos2.png" alt="html, css e javascript" height="200px ">
     </section>
 
     <footer>
-
+        
     </footer>
     
 </body>
