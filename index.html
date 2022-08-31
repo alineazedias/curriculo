@@ -28,17 +28,20 @@
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         
-        /* header div {
-            display: inline-block;
-            width: 40%;
-        } */
 
        header div img {
         width: 100px;
        }
+
+       .row::after{
+        display:table;
+        float: none;        
+        content: "";
+        overflow: auto;
+       }
        
-       .principal{
-        background-color: #f6f4f1;
+       nav{
+        background-color: #0c0801;
         height: 40px;
         max-width: 100%;
         margin: 0 auto;
@@ -46,17 +49,24 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
        }
         
-       .principal a{
-        color: rgb(0, 0, 0);
-        font-weight: normal;
-       }
-       
-       .principal li{
+       nav a{
+        color: rgb(240, 218, 218);
+        padding: 10px 20px;
         display: inline-block;
-        line-height: 2.5;
-        margin: 0 89px;
+        text-decoration: none;
        }
 
+       nav a:hover{
+        background-color: #96695e;
+        color: #000000;
+        
+       }
+       
+       body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+       
+       
        .pro{
         background-color: #000000; 
         color: #f6f4f1;
@@ -74,8 +84,15 @@
        }
        .emp1{
         background-color: #96695e ;
+        text-align: center;
+
         
        }
+       #atv{
+          display: inline-block;vertical-align: top;
+       }     
+
+       
 
        .tec{
         background-color: #000000; 
@@ -87,53 +104,80 @@
         text-align: center;
 
        }
+       
+       /* #logo{
+        float: left;
+       } */
+
+       #logo img{
+        border-radius: 50px;
+        
+       }
+     
+       #empresa{
+        text-decoration: 
+       }  
+
+        section{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        height: 100%;
+        min-width: 250px;
+        padding: 10px 0;
+       }
 
     
-
     </style>
 </head>
 <body>
-    <header>
-        <div>
+    <header class="row">
+        <div id="logo">
             <img src="https://avatars.githubusercontent.com/u/98472343?v=4" alt="foto do usuario">
         </div>         
 
-        <div>
+        <div id="dados">
             <h1>Aline Azedias</h1>
             <p>Programador WEB</p>
             <p>Rio de Janeiro, Brasil</p>
             <p>(21) 96640-0658</p>
             <p>aline.azedias@gmail.com</p>
         </div>
-        <div></div>
+        <div></div> 
             <img src="./img/linkedin.png" alt="logo linkedin" height="30"> 
             <img src="./img/logogit.png" alt="logo github" height="30">
             <img src="./img/belogo.png" alt="logo behance" height="30">            
             <img src="./img/insta.png" alt="logo insta"height="30"> 
-                   
+                
        
     </header>
-    <nav class="principal">
-        <ul>
-            <li>
-                <a href="#projetos"> Projetos</a>
-                <a href="#empresa"> Empresa</a>
-                <a href="#tecnologia">Tecnologias</a>
-            </li>
-        </ul>
+    <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="#projetos"> Projetos</a>
+        <a href="#empresa"> Empresa</a>
+        <a href="#tecnologia">Tecnologias</a>      
+        
        
     </nav>
+
     <section id="projetos" class="pro1">
         <h1 class="pro"> Projetos </h1>
-        <p>Projeto 1</p>
-        <img src="./img/fotonote.jpg" alt="foto de um notebook" height="150px">
-    
+                <p><b>Projeto 1</b></p>             
+                <img src="./img/fotonote.jpg" alt="foto de um notebook" height="150px">
 
     </section>
 
     <section id="empresa" class="emp1">
         <h1 class="emp"> Empresa </h1>
-        <p>Empresa 1</p>
+            <li>
+                <b>Social Media</b>
+            </li>
+            <li>
+                <b>Designer Gráfico </b>
+            </li>
+            <img src="./img/egitologo1.png.jpg" alt="logo egito cell" height="150px">
+
+              
     </section>
 
     <section id="tecnologia" class="tec1">
